@@ -167,14 +167,14 @@ class ExportMarkdown {
   }
 
   insertLineBreak (result, indent) {
-    if (!result.length) return
+    if (!result.length || result[result.length - 1] === '\n') return
     result.push(`${indent}\n`)
   }
 
   normalizeParagraphText (block, indent) {
     const { text } = block
     const lines = text.split('\n')
-    return lines.map(line => `${indent}${line}`).join('\n') + '\n'
+    return lines.map(line => `${indent}${line}`).join('\n')
   }
 
   normalizeHeaderText (block, indent) {

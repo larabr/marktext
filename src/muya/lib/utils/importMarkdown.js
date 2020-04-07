@@ -401,6 +401,12 @@ const importRegister = ContentState => {
         }
 
         case 'space': {
+          block = this.createBlock('p')
+          const contentBlock = this.createBlock('span', {
+            text: '\n'
+          })
+          this.appendChild(block, contentBlock)
+          this.appendChild(parentList[0], block)
           break
         }
 

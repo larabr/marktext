@@ -115,9 +115,9 @@ Lexer.prototype.token = function (src, top) {
     if (cap) {
       src = src.substring(cap[0].length)
       if (cap[0].length > 1) {
-        this.tokens.push({
-          type: 'space'
-        })
+        const spaces = Array(cap[0].length - 1).fill({ type: 'space' })
+        this.tokens = this.tokens.concat(spaces)
+        continue
       }
     }
 
