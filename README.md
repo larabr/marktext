@@ -1,4 +1,12 @@
-This is a fork of the main repo: markdown syntax is always visible even outside of Source Code mode (e.g. it will render \*\***bold text**\*\* instead of **bold text**).
+This is a fork of the official repo, featuring a few custom settings:
+
+1. **markdown syntax is always visible** even outside of Source Code mode (e.g. it will render \__italic text_\_ instead of _italic text_)
+
+2. **newlines are preserved** when saving/opening files
+
+These settings are currently hardcoded and cannot be disabled, which is why these changes are not merged in the main repo  (yet).<br/>
+<hr>
+
 
 <p align="center"><img src="static/logo-small.png" alt="Mark Text" width="100" height="100"></p>
 
