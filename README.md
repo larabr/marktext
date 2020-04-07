@@ -1,3 +1,5 @@
+This is a fork of the main repo: markdown syntax is always visible even outside of Source Code mode (e.g. it will render \*\***bold text**\*\* instead of **bold text**).
+
 <p align="center"><img src="static/logo-small.png" alt="Mark Text" width="100" height="100"></p>
 
 <h1 align="center">Mark Text</h1>

@@ -159,7 +159,7 @@ export const CLASS_OR_ID = genUpper2LowerKeyHash([
 export const DAED_REMOVE_SELECTOR = new Set([
   '.ag-image-marked-text::before',
   '.ag-image-marked-text.ag-image-fail::before',
-  '.ag-hide',
+  // '.ag-hide',
   '.ag-gray',
   '.ag-warn'
 ])
